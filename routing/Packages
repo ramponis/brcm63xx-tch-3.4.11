@@ -1,0 +1,1426 @@
+Package: 464xlat
+Version: 6
+Depends: libc, kmod-nat46
+Source: feeds/routing/nat46
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 3770
+Filename: 464xlat_6_brcm63xx-tch.ipk
+Size: 4470
+MD5Sum: f7e85e7b3c315c70d2bfdd84eb813719
+SHA256sum: b5260a2777af91210ddf3ef813af857781e5bfbf934ff1511980714258d95bfb
+Description:  464xlat CLAT support
+
+Package: ahcpd
+Version: 0.53-2
+Depends: libc, kmod-ipv6, ip, librt
+Source: feeds/routing/ahcpd
+License: MIT
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm63xx-tch
+Installed-Size: 24460
+Filename: ahcpd_0.53-2_brcm63xx-tch.ipk
+Size: 25332
+MD5Sum: 33dcb01f53701caf9580aad49fdab9e3
+SHA256sum: 84e78bfcace16d80691ea89c1fa599067e7cf18269d15d4dcbe9b46fb60f3539
+Description:  Ahcpd is a daemon for configuring an IPv6 network using the Ad-Hoc
+ Configuration Protocol (AHCP).  AHCP is designed for wireless mesh
+ networks, where IPv6 autoconfiguration and DHCPv6 do not work, but may
+ also be used on wired networks.
+
+Package: alfred
+Version: 2014.4.0-0
+Depends: libc, kmod-ipv6, librt
+Source: feeds/routing/alfred
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 16116
+Filename: alfred_2014.4.0-0_brcm63xx-tch.ipk
+Size: 17277
+MD5Sum: 7ef4be036cd6abb69e3024511ca3683a
+SHA256sum: 6cc3fe4ea38fff37b5bbca3136663cfc590259dad87a5ac088331f79a3e3ef8d
+Description:  alfred is a user space daemon for distributing arbitrary local information over
+ the mesh/network in a decentralized fashion. This data can be anything which
+ appears to be useful - originally designed to replace the batman-adv
+ visualization (vis), you may distribute hostnames, phone books, administration
+ information, DNS information, the local weather forecast ...
+ 
+ alfred runs as daemon in the background of the system. A user may insert
+ information by using the alfred binary on the command line, or use special
+ programs to communicate with alfred (done via unix sockets). alfred then takes
+ care of distributing the local information to other alfred servers on other
+ nodes. This is done via IPv6 link-local multicast, and does not require any
+ configuration. A user can request data from alfred, and will receive the
+ information available from all alfred servers in the network.
+
+Package: babel-pinger
+Version: 0.1-1
+Depends: libc, librt
+Source: feeds/routing/babel-pinger
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm63xx-tch
+Installed-Size: 4455
+Filename: babel-pinger_0.1-1_brcm63xx-tch.ipk
+Size: 5248
+MD5Sum: 8ca79ad412e5e8c6c502179372b80086
+SHA256sum: 333bc36a3359c52e3b0f0de702d8ef9a6bac6ff9bacd959e50dc089e8978bba6
+Description:  Babel-pinger is a hack to export a default route into Babel for people
+ using DHCP to configure their routers rather than speaking to their
+ upstream provider with a proper routing protocol.
+
+Package: babeld
+Version: 1.7.1-1
+Depends: libc, kmod-ipv6
+Source: feeds/routing/babeld
+License: MIT
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm63xx-tch
+Installed-Size: 72360
+Filename: babeld_1.7.1-1_brcm63xx-tch.ipk
+Size: 73425
+MD5Sum: 2fc9abee41f53dddffc1e9a0f0b10987
+SHA256sum: 32c44484118c3cb4b3ef21cbf5f4443bc2125e56384ee2212057543719e6db65
+Description:  Babel is a loop-avoiding distance-vector routing protocol roughly based
+ on DSDV and AODV, but with provisions for link cost estimation and
+ redistribution of routes from other routing protocols.
+ While it is optimised for wireless mesh networks, Babel will also work
+ efficiently on wired networks. It will generate between 1.2 and 2.4 times
+ the amount of routing traffic that RIPng would generate, while
+ never counting to infinity.
+
+Package: batctl
+Version: 2016.1-1
+Depends: libc, kmod-batman-adv, libnl-tiny
+Source: feeds/routing/batctl
+License: GPL-2.0
+Section: net
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: brcm63xx-tch
+Installed-Size: 27547
+Filename: batctl_2016.1-1_brcm63xx-tch.ipk
+Size: 28413
+MD5Sum: 3844835945e0d771bbcc3969661a892c
+SHA256sum: f7b0b9886b717cf522478e68a4d0c0a8074a0e9ff943bfa048e8b42a4110ee0e
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2016.1 of the user space utility.
+
+Package: batmand
+Version: 1440-0
+Depends: libc, libpthread, kmod-tun
+Source: feeds/routing/batmand
+License: GPL-2.0
+Section: net
+Maintainer: Corinna "Elektra" Aichele <onelektra@gmx.net>
+Architecture: brcm63xx-tch
+Installed-Size: 43972
+Filename: batmand_1440-0_brcm63xx-tch.ipk
+Size: 44849
+MD5Sum: 76458a0fb878a4e74f66f82a2690119c
+SHA256sum: f8361e023090aeacb2e71af39cc5630156da97350d709834cdcf85dea4cc70b9
+Description:  B.A.T.M.A.N. layer 3 routing daemon
+
+Package: bird4-uci
+Version: 0.2
+Depends: libc, bird4, libuci, uci
+Source: feeds/routing/bird-openwrt/bird4-openwrt
+License: GPL-3.0+
+Section: net
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm63xx-tch
+Installed-Size: 4055
+Filename: bird4-uci_0.2_brcm63xx-tch.ipk
+Size: 4869
+MD5Sum: 8e985eb13f3698b29285f560c261c3af
+SHA256sum: 28326f24b3caa6398b47f88acfbbbe935408bee486ab7abca725a56511ecc2ae
+Description:  bird4 UCI integration module
+
+Package: bird4
+Version: 1.4.5-2
+Depends: libc, libpthread
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 212868
+Filename: bird4_1.4.5-2_brcm63xx-tch.ipk
+Size: 213758
+MD5Sum: 11952fd01ea942821eaba66d0ba78e65
+SHA256sum: c4418d888e879b2dbd4f686ef4ef0f165e031b598ac8905fe96c5d7dde5879dc
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv4 version of BIRD, it supports OSPFv2, RIPv2 and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: bird6-uci
+Version: 0.2
+Depends: libc, bird6, libuci, uci
+Source: feeds/routing/bird-openwrt/bird6-openwrt
+License: GPL-3.0+
+Section: net
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm63xx-tch
+Installed-Size: 4230
+Filename: bird6-uci_0.2_brcm63xx-tch.ipk
+Size: 5051
+MD5Sum: 20e2004e433ffa60d95a77a547458b19
+SHA256sum: 05121bf6f522a66a08498683cd199d1e0e2ebdfe7c2f1e815e0d50aa01d0fca3
+Description:  bird6 UCI integration module
+
+Package: bird6
+Version: 1.4.5-2
+Depends: libc, libpthread
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 238481
+Filename: bird6_1.4.5-2_brcm63xx-tch.ipk
+Size: 239393
+MD5Sum: 0b2052b20fbbcb9fdc7f3dc99aa95085
+SHA256sum: d05e3509e0e457478f705968193e86028da68691d8636e2d3956c1d62ebb59a4
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv6 version of BIRD, it supports OSPFv3, RIPng and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: birdc4
+Version: 1.4.5-2
+Depends: libc, libreadline, libncurses, bird4
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 11612
+Filename: birdc4_1.4.5-2_brcm63xx-tch.ipk
+Size: 12646
+MD5Sum: 9a48ea93e6d3c08cc397a1ee348e2044
+SHA256sum: 8c91b87c2da1d699a191e95a7c8b14a14fe12d74c8e1dcac9aacba9ab5f3315c
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: birdc6
+Version: 1.4.5-2
+Depends: libc, libreadline, libncurses, bird6
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 13337
+Filename: birdc6_1.4.5-2_brcm63xx-tch.ipk
+Size: 14357
+MD5Sum: 90453f6c5a2ccb58328dc0e694837217
+SHA256sum: cff71d0edf10cd375675f8120fcd6d00caa9982e6b28dc9a7dbfb349ef54dfe2
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: birdcl4
+Version: 1.4.5-2
+Depends: libc, bird4
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 11075
+Filename: birdcl4_1.4.5-2_brcm63xx-tch.ipk
+Size: 12023
+MD5Sum: d984f23655b3e1013c8dd3f7daf87abf
+SHA256sum: 0b6dea096773130c29ae2a73134a125e3ac312d2370c82aa5f7dbe7a3dd903b9
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+
+Package: birdcl6
+Version: 1.4.5-2
+Depends: libc, bird6
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 12795
+Filename: birdcl6_1.4.5-2_brcm63xx-tch.ipk
+Size: 13747
+MD5Sum: 4d347b7afb3524cef29c6edb6d4dd70d
+SHA256sum: b84197181767d1ed92674961ef6bba6c5fd21d4f63c891ecffacc418617c2955
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+
+Package: bmx6-json
+Version: r2015080701-4
+Depends: libc, bmx6, libjson-c
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 6874
+Filename: bmx6-json_r2015080701-4_brcm63xx-tch.ipk
+Size: 7659
+MD5Sum: 9f04612404c38729fac0e604e6b7c4aa
+SHA256sum: 498a0e1546bfe7befbfbd50c88b12de9b1cadf343a8b762e3b3b4018fbb8a1d0
+Description:  json plugin based on json-c
+
+Package: bmx6-sms
+Version: r2015080701-4
+Depends: libc, bmx6
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 5105
+Filename: bmx6-sms_r2015080701-4_brcm63xx-tch.ipk
+Size: 5794
+MD5Sum: e513dff4e5da648a12cb5a6aac171675
+SHA256sum: b5174222325987621195dff74429a94d28b13b78cf943834d4cc70cc52701cce
+Description:  sms plugin
+
+Package: bmx6-table
+Version: r2015080701-4
+Depends: libc, bmx6
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 9150
+Filename: bmx6-table_r2015080701-4_brcm63xx-tch.ipk
+Size: 9893
+MD5Sum: 77b9c1d1721a551ec357e61281ff52ff
+SHA256sum: 481f3e51fe80dca1cd98db2b3601a8ab5e3520129cd1d52d8286c2bce1654160
+Description:  bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
+
+Package: bmx6-uci-config
+Version: r2015080701-4
+Depends: libc, bmx6, libuci
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 10046
+Filename: bmx6-uci-config_r2015080701-4_brcm63xx-tch.ipk
+Size: 10800
+MD5Sum: fa80a9c9f87d640e9ac6dbdd7a1064f9
+SHA256sum: c3b818e9c264bb90c8dc8e1d5ea3f52b458cdc6c64ee8a2cc7c3e35c13d2d700
+Description:  configuration plugin based on uci (recommended!)
+
+Package: bmx6
+Version: r2015080701-4
+Depends: libc, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 162907
+Filename: bmx6_r2015080701-4_brcm63xx-tch.ipk
+Size: 163698
+MD5Sum: ed425de676532f7c3b236293a6d39563
+SHA256sum: 31e947b6ae8969ec5598b64d445c5c26f69f9ac666b79572a26e61dd4df10403
+Description:  BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
+
+Package: bmx7-iwinfo
+Version: r2016072001-4
+Depends: libc, bmx7, libiwinfo
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 139
+Filename: bmx7-iwinfo_r2016072001-4_brcm63xx-tch.ipk
+Size: 881
+MD5Sum: 17bdfa7f86b6973d4637f9f390f87d8b
+SHA256sum: 29041e61680b9f33a633821e63755445ce2b93b97e969e3b946374df901c193b
+Description:  link characteristics plugin based on libiwinfo (recommended!)
+
+Package: bmx7-json
+Version: r2016072001-4
+Depends: libc, bmx7, libjson-c
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 6189
+Filename: bmx7-json_r2016072001-4_brcm63xx-tch.ipk
+Size: 6910
+MD5Sum: 19a46101b8a0efebc3f43007fa09be75
+SHA256sum: 0697c27c8fd9b47dc9b8bdf59da29bb22ce49ba585e8bb51c429f54ce6e0c4e4
+Description:  json plugin based on json-c
+
+Package: bmx7-sms
+Version: r2016072001-4
+Depends: libc, bmx7
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 5468
+Filename: bmx7-sms_r2016072001-4_brcm63xx-tch.ipk
+Size: 6163
+MD5Sum: 213d0c6f243b074925e5797d0e716811
+SHA256sum: c57cb62179de11758d9b22c2e7e8bea95debe90a756d31e15a290bb7f7b4b4fc
+Description:  sms plugin
+
+Package: bmx7-table
+Version: r2016072001-4
+Depends: libc, bmx7, bmx7-tun
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 10472
+Filename: bmx7-table_r2016072001-4_brcm63xx-tch.ipk
+Size: 11229
+MD5Sum: ab4c3aa96ee24740e949ded1fcd2aa03
+SHA256sum: bf47eae931f67c7ff0a91ac9bbe7c194ab12247bfd1671c018c98c68682488c0
+Description:  plugin to announce routes from tables via tunnels
+
+Package: bmx7-topology
+Version: r2016072001-4
+Depends: libc, bmx7
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 5352
+Filename: bmx7-topology_r2016072001-4_brcm63xx-tch.ipk
+Size: 6050
+MD5Sum: 2c0f5448a3a791a8f2a9271b4afe1502
+SHA256sum: 76797357b051c7c2b91b2be1a390984bc27b870d7d4d205756ef9fd5acbc768a
+Description:  topology plugin
+
+Package: bmx7-tun
+Version: r2016072001-4
+Depends: libc, bmx7, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 28607
+Filename: bmx7-tun_r2016072001-4_brcm63xx-tch.ipk
+Size: 29328
+MD5Sum: ed307d512c5851e944d4b94511cbf581
+SHA256sum: f20d60c435281814293cc09ad9c6a55e1cade04ca406355652ab2367a03be381
+Description:  ipip-based tunnel plugin (recommended!)
+
+Package: bmx7-uci-config
+Version: r2016072001-4
+Depends: libc, bmx7, libuci
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 9948
+Filename: bmx7-uci-config_r2016072001-4_brcm63xx-tch.ipk
+Size: 10737
+MD5Sum: 51fdb1a551bf43926b46cfc05f3dc64c
+SHA256sum: ba97a4879c3c71c91e053ad4f0ca0a818bb8f37c1ee6170e6d448d1019c3abb3
+Description:  configuration plugin based on uci (recommended!)
+
+Package: bmx7
+Version: r2016072001-4
+Depends: libc, zlib, libpolarssl, libiwinfo
+Source: feeds/routing/bmx7
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm63xx-tch
+Installed-Size: 190092
+Filename: bmx7_r2016072001-4_brcm63xx-tch.ipk
+Size: 190815
+MD5Sum: 31069219c88717d4f07a0c72fc9f1377
+SHA256sum: bb5e599abe8e20e27e3cee05da2571fa7fddfa8e7c740f1e74699ba236983ec8
+Description:  BMX7 routing daemon supporting securely-entrusted IPv6 (and IPv4in6) routing
+
+Package: cjdns
+Version: 0.17-2
+Depends: libc, kmod-tun, kmod-ipv6, libnl-tiny, libpthread, librt, libuci-lua, lua-bencode, dkjson, luasocket, lua-sha2
+Source: feeds/routing/cjdns
+License: GPL-3.0
+Section: net
+Maintainer: Lars Gierth <larsg@systemli.org>
+Architecture: brcm63xx-tch
+Installed-Size: 329089
+Filename: cjdns_0.17-2_brcm63xx-tch.ipk
+Size: 329749
+MD5Sum: a55178ed15641a490c4aa718b7c34096
+SHA256sum: a7903c916eb1c885a95a0b9dee1599fb7618c2827c22597cda3aab449c6d23b8
+Description:  Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
+
+Package: hnet-full-secure
+Version: 2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1
+Depends: libc, hnetd-openssl, luci-app-hnet, babeld, ohybridproxy, miniupnpd, minimalist-pcproxy
+Source: feeds/routing/hnetd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 105
+Filename: hnet-full-secure_2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1_brcm63xx-tch.ipk
+Size: 916
+MD5Sum: ab8a11697c1ebdfe39af1884f070187d
+SHA256sum: 6801b444f393b9093efefffd0c8c338036939502ad158c44b1ab7a20329ac82d
+Description:  HNCP Homenet metapackage
+
+Package: hnet-full
+Version: 2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1
+Depends: libc, hnetd-nossl, luci-app-hnet, babeld, ohybridproxy, miniupnpd, minimalist-pcproxy
+Source: feeds/routing/hnetd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 105
+Filename: hnet-full_2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1_brcm63xx-tch.ipk
+Size: 909
+MD5Sum: f9c920f488a2ecda199724093a90f541
+SHA256sum: 077fce5a12e70117c0db5337f40739a071c9e4906f9537af81f1dce3c6f6de11
+Description:  HNCP Homenet metapackage
+
+Package: hnetd-nossl
+Version: 2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1
+Depends: libc, odhcpd, odhcp6c, netifd, ip
+Source: feeds/routing/hnetd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 107998
+Filename: hnetd-nossl_2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1_brcm63xx-tch.ipk
+Size: 109070
+MD5Sum: 284ef171b2f2c473cedf3d3b5181221b
+SHA256sum: e978c6a34d2f9a77817cfa1a10a6d9f9206c58b9d670bf75cdea3ccb06f32ca4
+Description:  This package provides a daemon which implementats distributed prefix assignment
+ and service discovery for a home network consisting of multiple routers
+ connected to multiple service providers. It provides a netifd protocol "hnet"
+ for use in /etc/config/network.
+
+Package: hnetd-openssl
+Version: 2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1
+Depends: libc, odhcpd, odhcp6c, netifd, ip, libopenssl
+Source: feeds/routing/hnetd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 108001
+Filename: hnetd-openssl_2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1_brcm63xx-tch.ipk
+Size: 109116
+MD5Sum: 810c647ea89cf7c40ae87683ecf1d380
+SHA256sum: b8c128467e9ec86ada530165f359cbc56e8cb276b75d63dc71c2997334bd6e99
+Description:  This package provides a daemon which implementats distributed prefix assignment
+ and service discovery for a home network consisting of multiple routers
+ connected to multiple service providers. It provides a netifd protocol "hnet"
+ for use in /etc/config/network.
+
+Package: kmod-batman-adv
+Version: 3.4.11+2016.1-3
+Depends: kernel, kmod-lib-crc16, kmod-crypto-crc32c, kmod-lib-crc32c, kmod-cfg80211
+Source: feeds/routing/batman-adv
+License: GPL-2.0
+Section: kernel
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: brcm63xx-tch
+Installed-Size: 1766
+Filename: kmod-batman-adv_3.4.11+2016.1-3_brcm63xx-tch.ipk
+Size: 2714
+MD5Sum: 08461b565d7d4c7c3f19cfd7f69f60d2
+SHA256sum: c1e572c1e4f93875fc3d381f2037b66cb0b5162aaef254cbb1b911e9b1920631
+Description:  B.A.T.M.A.N. advanced is a kernel module which allows to
+ build layer 2 mesh networks. This package builds
+ version 2016.1 of the kernel module.
+
+Package: kmod-nat46
+Version: 3.4.11+6-rt19
+Depends: kernel, kmod-ipv6
+Source: feeds/routing/nat46
+License: GPL-2.0
+Section: kernel
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 14162
+Filename: kmod-nat46_3.4.11+6-rt19_brcm63xx-tch.ipk
+Size: 14967
+MD5Sum: 074a931ebdac2b3bb07482384cda2cde
+SHA256sum: 503842ef17ad96356b07f831e06a8d53f414a9117f3636b807daf90561963bc4
+Description:  Stateless NAT46 translation kernel module
+
+Package: luci-app-bird4
+Version: 0.2
+Depends: libc, bird4-uci, luci-base
+Source: feeds/routing/bird-openwrt/bird4-openwrt
+License: GPL-3.0+
+Section: luci
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm63xx-tch
+Installed-Size: 4265
+Filename: luci-app-bird4_0.2_brcm63xx-tch.ipk
+Size: 5032
+MD5Sum: b52227a8e2fb6dcff4ba8bafcf93b709
+SHA256sum: e43bbfce1abfdccd2420f2c10379a3b6f5985eb423742987e6a6019f670d9e74
+Description:  bird4 application for LuCI
+
+Package: luci-app-bird6
+Version: 0.2
+Depends: libc, bird6-uci, luci-base
+Source: feeds/routing/bird-openwrt/bird6-openwrt
+License: GPL-3.0+
+Section: luci
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm63xx-tch
+Installed-Size: 4418
+Filename: luci-app-bird6_0.2_brcm63xx-tch.ipk
+Size: 5181
+MD5Sum: 960a5e693307b3e64ca4d5057ca6e379
+SHA256sum: 3b1e08cd4710d9fe704b9e71028d2605aa2647d79acf3a8c70e1e8231b49e907
+Description:  bird6 application for LuCI
+
+Package: luci-app-bmx6
+Version: 3
+Depends: libc, luci-lib-json, luci-mod-admin-full, luci-lib-httpclient, bmx6
+Source: feeds/routing/luci-app-bmx6
+License: GPL-2.0+
+Section: luci
+Maintainer: Pau Escrich <p4u@dabax.net>
+Architecture: brcm63xx-tch
+Installed-Size: 81312
+Filename: luci-app-bmx6_3_brcm63xx-tch.ipk
+Size: 82215
+MD5Sum: fbcacd5b805664db81db2850d1c35ada
+SHA256sum: 1fa9334addb4503cba6d5f19499b2375fe8291ddbdb8799c804b77c3f5f88c25
+Description:  bmx6 web application (status and configuration) for LuCi web interface
+
+Package: luci-app-bmx7
+Version: 0.0-alpha
+Depends: libc, luci-lib-json, luci-mod-admin-full, luci-lib-httpclient, bmx7
+Source: feeds/routing/luci-app-bmx7
+License: GPL-2.0+
+Section: luci
+Maintainer: Roger Pueyo Centelles <roger.pueyo@guifi.net>
+Architecture: brcm63xx-tch
+Installed-Size: 14427
+Filename: luci-app-bmx7_0.0-alpha_brcm63xx-tch.ipk
+Size: 15203
+MD5Sum: 6adcfd586d407ee59cc03eff9f539f5a
+SHA256sum: c6feba8e002920b4f5e4339dad1db98e5bf896131ce9f5542330363ccc41bf75
+Description:  LuCI application for web-based configuration and visualization of the BMX7 routing daemon
+
+Package: luci-app-cjdns
+Version: 1.3-5
+Depends: libc, cjdns, luci-base
+Source: feeds/routing/luci-app-cjdns
+License: GPL-3.0
+Section: luci
+Maintainer: Lars Gierth <larsg@systemli.org>
+Architecture: brcm63xx-tch
+Installed-Size: 5653
+Filename: luci-app-cjdns_1.3-5_brcm63xx-tch.ipk
+Size: 6547
+MD5Sum: 9c991e1333db7a774d8e7da9af79f14f
+SHA256sum: cddd1be6ba213c13bd9111690cc179a008e31dc930e722b0bf7e58a6d1c70a87
+Description:  This package allows you to configure and inspect cjdns networking using LuCI.
+ 
+ Cjdns implements an encrypted IPv6 network using public-key cryptography
+ for address allocation and a distributed hash table for routing.
+ This provides near-zero-configuration networking, and prevents many
+ of the security and scalability issues that plague existing networks.
+
+Package: luci-app-hnet
+Version: 2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1
+Depends: libc
+Source: feeds/routing/hnetd
+License: GPL-2.0
+Section: luci
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 57131
+Filename: luci-app-hnet_2016-05-17-9ab71adbf0a7ad2a0964e48641b19b016b37df16-1_brcm63xx-tch.ipk
+Size: 58009
+MD5Sum: f5b811f9c0ed52a3837f7209f8fc295b
+SHA256sum: aa912ce0e87bf19ef96b7666981c661dac7fc0711d2bc2d30affce375d33a762
+Description:  HNCP Homenet configuration and visualization
+
+Package: map-t
+Version: 6
+Depends: libc, map, kmod-nat46
+Source: feeds/routing/nat46
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 103
+Filename: map-t_6_brcm63xx-tch.ipk
+Size: 822
+MD5Sum: 5d19f2b11ebd60da801dcbd51b236cb5
+SHA256sum: 13cd0d77d32c95fa13cb31afc0718c243013ec16944cc82ecfd777c1d018e446
+Description:  MAP-T configuration support
+
+Package: mcproxy
+Version: 2014-12-31-b7bd2d0809a0d1f177181c361b9a6c83e193b79a-2
+Depends: libc, libpthread, libstdcpp
+Source: feeds/routing/mcproxy
+License: GPL-2.0+
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 2363
+Filename: mcproxy_2014-12-31-b7bd2d0809a0d1f177181c361b9a6c83e193b79a-2_brcm63xx-tch.ipk
+Size: 3339
+MD5Sum: fc124030451477b1d67d7e9f5d975d63
+SHA256sum: ddb4fee6e2acccf7c11c372cc7703c2b6035a5cfb4463d5199ba5f34f8927a32
+Description:  mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
+ It operates on the kernel tables for multicast routing and allows for multiple instantiations,
+ as well as dynamically changing downstream interfaces.
+
+Package: minimalist-pcproxy
+Version: 2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-1
+Depends: libc, libubox
+Source: feeds/routing/minimalist-pcproxy
+License: GPL-2.0
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: brcm63xx-tch
+Installed-Size: 6462
+Filename: minimalist-pcproxy_2015-01-12-2d6d1b0b0a3b79a9b4a9b0a7606a84600a967bcb-1_brcm63xx-tch.ipk
+Size: 7531
+MD5Sum: 39d9ed6d03d76385f9119e49f67036e2
+SHA256sum: 4d4603c44fa63da4dac56fad1e8ad30a785a8582945d197553890734587b029d
+Description:  This package contains a daemon which can be used to forward
+ PCP (Port Control Protocol - RFC6887) requests requests to PCP remote servers.
+ 
+ In and of itself, it is not very useful, but combined with hnetd+miniupnpd
+ it allows for control of NAT forwarding and firewall pinholes from multiple
+ hops away.
+
+Package: miniupnpd
+Version: 2.0-1
+Depends: libc, iptables, libip4tc, libip6tc, ip6tables, libuuid
+Source: feeds/routing/miniupnpd
+License: BSD-3-Clause
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: brcm63xx-tch
+Installed-Size: 66016
+Filename: miniupnpd_2.0-1_brcm63xx-tch.ipk
+Size: 66961
+MD5Sum: c2c21a16348d10ab9e63f560ae239bf1
+SHA256sum: 5d1192ac20fd793a73d53e1853def4d868fcc516078524b039233f5894a0814d
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mrd6
+Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1
+Depends: libc, libstdcpp
+Source: feeds/routing/mrd6
+License: GPL-2.0+
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 681
+Filename: mrd6_2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1_brcm63xx-tch.ipk
+Size: 1752
+MD5Sum: dc83d25fac9c22c80c4dd63b007eeb80
+SHA256sum: 6a4eb12540aee85aa7a02ac0141d0aa6ee1721f5d818947ef3ba3e559156203e
+Description:  Multicast is becoming a major component in next generation networks, used 
+ in several scenarios, from video broadcasting to multimedia conferencing. 
+ In order to be implemented, new technology needs supporting hardware and 
+ software across a set of devices and systems. MRD6 is an implementation of 
+ a modular IPv6 Multicast Routing Framework for the Linux operating system 
+ and provides MLDv2 (as well as MLDv1), PIM-SM and MBGP support.
+
+Package: ndppd
+Version: 0.2.3-1
+Depends: libc, kmod-ipv6, uclibcxx
+Source: feeds/routing/ndppd
+License: GPL-3.0+
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm63xx-tch
+Installed-Size: 61368
+Filename: ndppd_0.2.3-1_brcm63xx-tch.ipk
+Size: 62320
+MD5Sum: 349ecdd9db92c6abba06a22ff0cc3743
+SHA256sum: c47fe6a1df33e702aaa6c2a24c3096f5d256eab7269053838eee8a6eb5485051
+Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
+ Protocol) messages between interfaces.  ndppd currently only supports Neighbor
+ Solicitation Messages and Neighbor Advertisement Messages.
+ 
+ The ndp_proxy provided by Linux doesn't support listing proxies, and only hosts
+ are supported.  No subnets.  ndppd solves this by listening for Neighbor
+ Solicitation messages on an interface, then query the internal interfaces for
+ that target IP before finally sending a Neighbor Advertisement message.
+
+Package: nodogsplash
+Version: 0.9_beta9.9.9-5
+Depends: libc, libpthread, iptables-mod-ipopt
+Source: feeds/routing/nodogsplash
+License: GPL-2.0+
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 3978
+Filename: nodogsplash_0.9_beta9.9.9-5_brcm63xx-tch.ipk
+Size: 4741
+MD5Sum: f3e3e7957397965cbfc5b439b7992567
+SHA256sum: a200c5fd3148a2cb78ba5fbc34bf1f6a34babb927a38088f802f24a42328b74c
+Description:  Nodogsplash offers a simple way to open a free hotspot providing
+ restricted access to an internet connection.
+
+Package: ohybridproxy
+Version: 2016-05-17-8a28ae92c97099e771c9ede5641e3782ae809c27-1
+Depends: libc, libubox, mdnsd
+Source: feeds/routing/ohybridproxy
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm63xx-tch
+Installed-Size: 15180
+Filename: ohybridproxy_2016-05-17-8a28ae92c97099e771c9ede5641e3782ae809c27-1_brcm63xx-tch.ipk
+Size: 16019
+MD5Sum: 2fb2cbe627ded943076c57bdfe1dda3e
+SHA256sum: f0fd6bb7fdc39b32cb8acfa1ec6dd9ec9f4530a590774d217efee0caebbda652
+Description:  This package provides a statically configured daemon for translating DNS
+ requests to Multicast DNS and back again.
+
+Package: olsrd-mod-arprefresh
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 1734
+Filename: olsrd-mod-arprefresh_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 2490
+MD5Sum: 4bec28048907882bd602567a16656dac
+SHA256sum: 25ce55f134b7c095546a528bbed02ed6e3fb831f5b3477d4f0a0f236a253c5f6
+Description:  Kernel ARP cache refresh plugin
+
+Package: olsrd-mod-bmf
+Version: 0.9.0.3-1
+Depends: libc, olsrd, kmod-tun
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 12751
+Filename: olsrd-mod-bmf_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 13496
+MD5Sum: 8f1b0a549f6e91e02bdf2ef4e5dcabbb
+SHA256sum: 8fa9118a0c18d0d32b4e3df5fdce63bfbec3bc4350f72535c5739d0717f935e8
+Description:  Basic multicast forwarding plugin
+
+Package: olsrd-mod-dot-draw
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 3736
+Filename: olsrd-mod-dot-draw_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 4499
+MD5Sum: bd05460666a5c5b858b753fdc678922a
+SHA256sum: 6cdf2764e7d51042a99cbc7510cf5551a69d099167c1278795db05ffa548613b
+Description:  Dot topology information plugin
+
+Package: olsrd-mod-dyn-gw-plain
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 2150
+Filename: olsrd-mod-dyn-gw-plain_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 2916
+MD5Sum: 090a98e87194b0545657074ef1869257
+SHA256sum: a0043964da42e8d0616f27caadfe1ae8379bcc1a31da8bf5add84df60fb4b859
+Description:  Dynamic internet gateway plain plugin
+
+Package: olsrd-mod-dyn-gw
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 3867
+Filename: olsrd-mod-dyn-gw_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 4589
+MD5Sum: 5dc41a2ec0999de5672393a5aaee1842
+SHA256sum: 0f7bd2c9717644536ea5aadaf7bb6846e32cec1a91e1518e86781b76f14a3d1e
+Description:  Dynamic internet gateway plugin
+
+Package: olsrd-mod-httpinfo
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 32868
+Filename: olsrd-mod-httpinfo_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 33701
+MD5Sum: 1ce3d91f4f6ec5a274360115899fae23
+SHA256sum: 4b08e8f84f50a2840f7a37145179c3b5ffa2178f18a28d742596d83178515a85
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-jsoninfo
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 28172
+Filename: olsrd-mod-jsoninfo_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 28889
+MD5Sum: 9d51e1b14b513a7142056c69565c5090
+SHA256sum: 6f5b94015449ea76b02c18d469bb06d1d367892324071756f0c3e09f3acd1bcc
+Description:  Small informative plugin with JSON output
+
+Package: olsrd-mod-mdns
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 8719
+Filename: olsrd-mod-mdns_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 9507
+MD5Sum: 8c63bd6a10f940179b24883bfda35b7d
+SHA256sum: f9f0d3188d03ae68bdb2bdc078f7e86e6d6b1f3fbe4ef2127f298de3ac8a3230
+Description:  MDNS/Zeroconf/Bonjour packet distribution 
+
+Package: olsrd-mod-nameservice
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 11844
+Filename: olsrd-mod-nameservice_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 12595
+MD5Sum: 2d85fb0fc4737a2e4e6de7c156f9a24d
+SHA256sum: 527091ff3ff7f7f4defe63400ed603ddd441038b3a6a9cc1ccb0c48e644a4206
+Description:  Lightweight hostname resolver plugin
+
+Package: olsrd-mod-p2pd
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 7825
+Filename: olsrd-mod-p2pd_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 8614
+MD5Sum: 4ef38b4cd23a477c0423931ca55273e5
+SHA256sum: 40fc3b608c4e0e379c2f6e3d6ef6ce7a44ad604eb9dbb2d36dcbb6272d7951f3
+Description:  Peer to Peer Discovery plugin
+
+Package: olsrd-mod-pgraph
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 2650
+Filename: olsrd-mod-pgraph_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 3410
+MD5Sum: 585eeb6dd0e4061a4f93413d36dbd9bf
+SHA256sum: 88f44b2fc7bc3556db7292b0e3177c56ae8d87a162ba4ff2f32f5bc7adb4ebdd
+Description:  output network topology for pgraph
+
+Package: olsrd-mod-pud
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 53099
+Filename: olsrd-mod-pud_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 53820
+MD5Sum: 247287d158a93518aa55a0ab91d2711d
+SHA256sum: d3d1c7ca6206f3b28da05b563161e3b444c25398c8932a2c51c99b6ee15020b6
+Description:  Position Update Distribution plugin
+
+Package: olsrd-mod-quagga
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 5749
+Filename: olsrd-mod-quagga_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 6476
+MD5Sum: ebbe933adcdc6a78929aab2674cfd37c
+SHA256sum: 004f91aeec65fb6b7193589e2cdda69c1718f57fe739399398ca06a3d1954f3e
+Description:  Quagga plugin
+
+Package: olsrd-mod-secure
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 10045
+Filename: olsrd-mod-secure_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 10829
+MD5Sum: df775c413125faf2aed424259e5ae438
+SHA256sum: da852d95942c9222f94610d695d7b4ce91e878e3a5f86d8cc8d0cac27a57aff8
+Description:  Message signing plugin to secure routing domain
+
+Package: olsrd-mod-sgwdynspeed
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 4172
+Filename: olsrd-mod-sgwdynspeed_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 4946
+MD5Sum: 37873b3957cf9e4195b46213795069e9
+SHA256sum: 7df0711b7effc5c4fd92bdbf0eee8ec25e39d746c27332bc66e8346267ced009
+Description:  Smart Gateway dynamic speed plugin
+
+Package: olsrd-mod-txtinfo
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 8059
+Filename: olsrd-mod-txtinfo_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 8836
+MD5Sum: 9950c27ee2915099cade5b5f45d648a3
+SHA256sum: 27f11a608750e70d948ca0557d480565313c589329a7a1d16a3240c58583f424
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-watchdog
+Version: 0.9.0.3-1
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 1507
+Filename: olsrd-mod-watchdog_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 2245
+MD5Sum: c10959f7d1130a74dc75b8ed37da48ab
+SHA256sum: 3234838d063f177c1769f6d4d03c72b0161697a4f3d69ca37d93aed72a2e9d26
+Description:  Watchdog plugin
+
+Package: olsrd
+Version: 0.9.0.3-1
+Depends: libc, libpthread
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 146180
+Filename: olsrd_0.9.0.3-1_brcm63xx-tch.ipk
+Size: 146950
+MD5Sum: 5c9b87160c668a16ad688d75dad92b46
+SHA256sum: a719c19910da6e5617164d171ba024d867b7da54e2fd0e2fbb1683464e0267fd
+Description:  OLSR (Optimized Link State Routing) daemon
+
+Package: oonf-dlep-proxy
+Version: 0.14.1-1
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-dlep-proxy
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 94268
+Filename: oonf-dlep-proxy_0.14.1-1_brcm63xx-tch.ipk
+Size: 95189
+MD5Sum: 6ee5a32174ac58bcd1f7cf6474462ffc
+SHA256sum: cfde0f0ae3616d341645ad9a94fa1208b133b1bb77eb5d3a6f7c094465146ef7
+Description:  Build DLEP Radio+Router Agent
+
+Package: oonf-dlep-radio
+Version: 0.14.1-1
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-dlep-radio
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 90958
+Filename: oonf-dlep-radio_0.14.1-1_brcm63xx-tch.ipk
+Size: 91684
+MD5Sum: a720237a48a6e255893343132d6b2b69
+SHA256sum: 0d47b8a1c929863aeec73212caac115795ae5167982ce8aba029b42f52af7c84
+Description:  Build DLEP Radio Agent
+
+Package: oonf-init-scripts
+Version: 0.9.1-r3
+Depends: libc
+Source: feeds/routing/oonf-init-scripts
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 1396
+Filename: oonf-init-scripts_0.9.1-r3_brcm63xx-tch.ipk
+Size: 2124
+MD5Sum: cee25c35ea0ee679628c57b8d527f94b
+SHA256sum: 0756f5183b4605aca4bc87c9e8c0356885cb267c6b24041e707b6e77bc2aaa31
+Description:  Common OONF startup scripts
+
+Package: oonf-olsrd2
+Version: 0.14.1-1
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-olsrd2
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: brcm63xx-tch
+Installed-Size: 152982
+Filename: oonf-olsrd2_0.14.1-1_brcm63xx-tch.ipk
+Size: 153772
+MD5Sum: a1ce86720b6d89cee4b0a65643d945de
+SHA256sum: 2e31554c6839fcbd70b377696e484306aa6c8ab0ba406750c81d60e752052353
+Description:  Build Olsrd V2 Routing Agent
+
+Package: prince
+Version: v0.3.1-1
+Depends: libc, libjson-c, libpthread
+Source: feeds/routing/poprouting
+Section: net
+Architecture: brcm63xx-tch
+Installed-Size: 33661
+Filename: prince_v0.3.1-1_brcm63xx-tch.ipk
+Size: 34613
+MD5Sum: 0c566281ff1ead888680b2ceedbb91ee
+SHA256sum: 17d465b083bab7e3db8ae6fbecc10d639681ae07d1a80d44a3d03011d991ac5a
+Description:  Prince is an open source implementation of the PopRouting Algorithm.
+ It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
+ 
+ It work by fetching topology data from a Link State routing demon(OONF, OLSR, OSPF, etc),
+ calculating the betweenness centrality using the topology, then using these data
+ the timer's value are optimized. Finally the timers are pushed back to the routing demon.
+ Currently it only supports OLSRd2 (aka OONF).
+
+Package: quagga-babeld
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 43393
+Filename: quagga-babeld_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 44162
+MD5Sum: 1e1105de5a7b2782ffd41b7100e95b2a
+SHA256sum: 48f0f55a4d79a779f79e11d761a689967493c500261986a05254a16351278813
+Description:  Babel routing engine
+
+Package: quagga-bgpd
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 214511
+Filename: quagga-bgpd_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 214846
+MD5Sum: abfc7e9e17561db813846e1868c3a84b
+SHA256sum: f604fe64953dc5a4d1e836e7046f8bc20c469c265af6af342acd9e39b9c5023c
+Description:  BGPv4, BGPv4+, BGPv4- routing engine
+
+Package: quagga-isisd
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 93247
+Filename: quagga-isisd_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 94000
+MD5Sum: 63d318ff5ee147af80cf02f725e52c46
+SHA256sum: d484c3d6c760747450de38177706aa0cc4a077658ade086c5e79a5cf5ce4a55a
+Description:  IS-IS routing engine
+
+Package: quagga-libospf
+Version: 0.99.22.4-2
+Depends: libc, quagga
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 197821
+Filename: quagga-libospf_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 196299
+MD5Sum: 5b3830adcbe3fa074bde036b0478c919
+SHA256sum: eb432621738c23a9590c2c0e807d1847e81609d73c9c398458d03946705b9b2e
+Description:  OSPF library
+
+Package: quagga-libzebra
+Version: 0.99.22.4-2
+Depends: libc, quagga
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 141131
+Filename: quagga-libzebra_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 140523
+MD5Sum: 6a0ac53de2f318e0333c1f584617bfac
+SHA256sum: fcbd2c304d7f82623e84121dba9eb5fd1509ae2c2bf9b96e2d672a13ed37173e
+Description:  zebra library
+
+Package: quagga-ospf6d
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libospf, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 88961
+Filename: quagga-ospf6d_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 89638
+MD5Sum: 9c293bdc9e85c88e7964f8651209c8e4
+SHA256sum: aace16d8922dab0719c169059a0299e0f4e9e6546062003f9154dd42d56f7df3
+Description:  OSPFv3 routing engine
+
+Package: quagga-ospfd
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libospf, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 3352
+Filename: quagga-ospfd_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 4130
+MD5Sum: 878e8f79ab0de0e6f92c8e60836637e0
+SHA256sum: 92bb6f56899f8a224aa2c4040eda4f65c4e15f04b4b4f5d5fd4908059855e090
+Description:  OSPFv2 routing engine
+
+Package: quagga-ripd
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 37122
+Filename: quagga-ripd_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 37869
+MD5Sum: 24d6b6005934d48313727e27128aa137
+SHA256sum: fe6323ba8925d5df551ada34bc40506b5957099620505e49b3a5197c86129b70
+Description:  RIP routing engine
+
+Package: quagga-ripngd
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 29789
+Filename: quagga-ripngd_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 30359
+MD5Sum: fa9707509021610a42a90c18ad52f76d
+SHA256sum: 97fa8dbfed3eeba23a452c21eedc826822593b0b4bb9ce9ca75b9d8561113963
+Description:  RIPNG routing engine
+
+Package: quagga-vtysh
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra, libreadline, libncurses
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 116713
+Filename: quagga-vtysh_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 117175
+MD5Sum: 56dce6941eb8a57f132a038bb45dcbac
+SHA256sum: b6db7958974e562f0a4e202842e7d4f0c43f0be4600b6ef8adb0261ea62d681a
+Description:  integrated shell for Quagga routing software
+
+Package: quagga-watchquagga
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 11934
+Filename: quagga-watchquagga_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 12711
+MD5Sum: 12ea38f39a90bda46b9ccd185cd9e83a
+SHA256sum: 6422bf57ed0b3d1eb0c816de7ecc64e7ca96dd7919dedfe6e11392490ef70eca
+Description:  Quagga watchdog
+
+Package: quagga-zebra
+Version: 0.99.22.4-2
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 76072
+Filename: quagga-zebra_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 76562
+MD5Sum: b3752de4607bf500f3b0d7317703176b
+SHA256sum: 0cff92084d477a5b6d4e9f321f1a18035c7568a6920276269e9e74a36ba7cae7
+Description:  Zebra daemon
+
+Package: quagga
+Version: 0.99.22.4-2
+Depends: libc, librt
+Source: feeds/routing/quagga
+License: GPL-2.0
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: brcm63xx-tch
+Installed-Size: 2395
+Filename: quagga_0.99.22.4-2_brcm63xx-tch.ipk
+Size: 3206
+MD5Sum: 5b9eb35a322cb3fc8d98ee30ca5f5365
+SHA256sum: b0cdb8bfc8c41bc3e1be040d8c9c5da624ce38e26bf3f789cf5dbfd8a4a4070e
+Description:  A routing software package that provides TCP/IP based routing services
+ with routing protocols support such as RIPv1, RIPv2, RIPng, OSPFv2,
+ OSPFv3, BGP-4, and BGP-4+
+
+Package: smcroute
+Version: 2.0.0-1
+Depends: libc
+Source: feeds/routing/smcroute
+License: GPL-2.0+
+Section: net
+Maintainer: Leonardo Brondani Schenkel <leonardo@schenkel.net>
+Architecture: brcm63xx-tch
+Installed-Size: 14012
+Filename: smcroute_2.0.0-1_brcm63xx-tch.ipk
+Size: 14772
+MD5Sum: 3274bc5148551d0959db69c873756b6a
+SHA256sum: 90a754ace77455b70e3095d9653429f14f0cc350a3f0455af8546c5db77483b6
+Description:  SMCRoute is a command line tool to manipulate the multicast routes of the Linux kernel.
+
+Package: vis
+Version: 1440-0
+Depends: libc, libpthread
+Source: feeds/routing/vis
+License: GPL-2.0
+Section: net
+Maintainer: Corinna "Elektra" Aichele <onelektra@gmx.net>
+Architecture: brcm63xx-tch
+Installed-Size: 11740
+Filename: vis_1440-0_brcm63xx-tch.ipk
+Size: 12546
+MD5Sum: 62d567e31e45b38ca8f23712586ef389
+SHA256sum: de39798232a0af861ec7a17afe89c643723a634d43cc032075254beec971f906
+Description:  visualization server for B.A.T.M.A.N. layer 3
+
